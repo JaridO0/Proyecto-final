@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+*{
+    margin:0px;
+	padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background: #DEF2D7;
+    font-family: 'Concert One', cursive;
+}
+
+/*header*/
+
+header{
+    height: 100px;
+    background: #fff;
+}
+
+.header{
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 70px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.logo img{
+    width: 130px;
+    height: 90px;
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menu nav ul li a{
+    font-size: 21px;
+    text-decoration: none;
+    color: #000;
+    transition: opacity 300ms;
+}
+
+.menu nav ul li a:hover{
+    opacity: 0.6;
+}
+
+.btn__header-servicos,
+.btn__solicitar-cover{
+    padding: 14px 35px;
+    border: none;
+    background: #000;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+    font-family: 'Concert One', cursive;
+}
+
+.btn__header-servicos:hover,
+.btn__solicitar-cover:hover{
+    background: #078C03;
+    color: #000;
+}
+
+main{
+    max-width: 1200px;
+    padding: 40px;
+    margin: auto;
+}
+
+.cover{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.text__info-cover{
+    width: 50%;
+}
+
+.text__info-cover h1{
+    font-size: 50px;
+}
+
+.text__info-cover p{
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.buttons__cover{
+    display: flex;
+    margin-top: 40px;
+}
+
+.btn__leermas-cover{
+    padding: 14px 40px;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 300ms;
+}
+
+.btn__leermas-cover:hover{
+    background: #a2efa8;
+}
+
+.img1__cover{
+    width: 50%;
+}
+
+.img1__cover img{
+    width: 480px;
+    height: 465px;
+    margin-top: -131px;
+    margin-left: 60px;
+}
+
+.titulo{
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    text-shadow: 0px 5px 5px #aef8ab;
+}
+
+/*Galeria de productos*/
+
+.container{
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width: 250px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 270px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido h3{
+    margin-bottom: 15px;
+    font-family: titulos;
+    color: rgb(145, 82, 82);
+}
+
+.card .contenido p{
+    font-family: parrafos;
+}
+
+.card .contenido a{
+    color: rgb(75, 214, 47);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    border: solid 1px rgb(59, 110, 52);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: rgb(41, 187, 22);
+    color: white;
+}
